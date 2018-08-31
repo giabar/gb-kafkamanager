@@ -1,2 +1,1 @@
-# gb-kafkamanager
-Kafka-Manager Docker image
+# Kafka-Manager Docker image
