@@ -6,7 +6,7 @@ RUN tar zxvf 1.3.3.18.tar.gz &&\
 WORKDIR /kafkamanager
 RUN sbt clean dist
 
-FROM openjdk:8-jdk
+FROM openjdk:8-jdk-alpine
 WORKDIR /tmp
 COPY --from=0 /kafkamanager/target/universal/kafka-manager-1.3.3.18.zip .
 RUN unzip kafka-manager-1.3.3.18.zip &&\
